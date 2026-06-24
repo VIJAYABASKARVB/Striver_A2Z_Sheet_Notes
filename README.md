@@ -18,8 +18,8 @@
 | 10 | Find Missing Number | [Link](./Arrays/1.Easy/10_Find_Missing_Number/Find_Missing_Number.md) |
 | 11 | Maximum Consecutive Ones | [Link](./Arrays/1.Easy/11_Maximum_Consecutive_Ones/Maximum_Consecutive_Ones.md) |
 | 12 | Number that Appears Once | [Link](./Arrays/1.Easy/12_Find_the_Number_that_Appears_Once_and_Other_Numbers_Twice/Find_the_Number_that_Appears_Once_and_Other_Numbers_Twice.md) |
-| 13 | Longest Subarray with Given Sum (Positive) | ⏳ |
-| 14 | Longest Subarray with Sum K | ⏳ |
+| 13 | Longest Subarray with Sum K (Positive) | [Link](./Arrays/1.Easy/13_Longest_Subarray_with_Given_Sum_Positive/Longest_Subarray_with_Sum_K.md) |
+| 14 | Longest Subarray with Zero Sum | [Link](./Arrays/1.Easy/14_Longest_Subarray_with_Sum_K/Longest_Subarray_with_Zero_Sum.md) |
 
 ### 🔶 Medium
 
