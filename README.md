@@ -56,3 +56,18 @@
 | 10 | Count Inversions | ⏳ |
 | 11 | Reverse Pairs | ⏳ |
 | 12 | Maximum Product Subarray | ⏳ |
+
+## Stack-Queue
+
+### 💡 Learning
+
+| # | Problem | Solution |
+|---|---------|----------|
+| 01 | Implement Stack using Array | [Link](./Stack-Queue/Learning/01_Implement_Stack_Using_Arrays/Implement_Stack_Using_Arrays.md) |
+| 02 | Queue Using Array (Circular) | [Link](./Stack-Queue/Learning/02_Implement_Queue_Using_Arrays/Implement_Queue_Using_Arrays.md) |
+| 03 | Implement Stack using Queue | ⏳ |
+| 04 | Implement Queue using Stack | ⏳ |
+| 05 | Implement Stack using LinkedList | ⏳ |
+| 06 | Implement Queue using LinkedList | ⏳ |
+| 07 | Balanced Parenthesis | ⏳ |
+| 08 | Implement Min Stack | ⏳ |
