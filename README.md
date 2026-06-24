@@ -66,7 +66,7 @@
 | 01 | Implement Stack using Array | [Link](./Stack-Queue/Learning/01_Implement_Stack_Using_Arrays/Implement_Stack_Using_Arrays.md) |
 | 02 | Queue Using Array (Circular) | [Link](./Stack-Queue/Learning/02_Implement_Queue_Using_Arrays/Implement_Queue_Using_Arrays.md) |
 | 03 | Implement Stack using Single Queue | [Link](./Stack-Queue/Learning/03_Implement_Stack_Using_Queue/Implement_Stack_Using_Queue.md) |
-| 04 | Implement Queue using Stack | ⏳ |
+| 04 | Implement Queue using Stack | [Link](./Stack-Queue/Learning/04_Implement_Queue_Using_Stack/Implement_Queue_Using_Stack.md) |
 | 05 | Implement Stack using LinkedList | ⏳ |
 | 06 | Implement Queue using LinkedList | ⏳ |
 | 07 | Balanced Parenthesis | ⏳ |
