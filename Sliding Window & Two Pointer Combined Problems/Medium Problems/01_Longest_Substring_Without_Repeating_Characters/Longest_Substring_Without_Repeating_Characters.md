@@ -1,10 +1,10 @@
 # Longest Substring Without Repeating Characters
 
-## Problem Statement
+## Problem Summary
 
-Given a string `s`, return the length of the **longest substring** that contains **no repeating characters**.
+Given a string `s`, find the **length of the longest substring** that contains **no repeated characters**.
 
-A **substring** is a contiguous sequence of characters within a string.
+A **substring** is a **contiguous** part of a string.
 
 ---
 
@@ -12,500 +12,257 @@ A **substring** is a contiguous sequence of characters within a string.
 
 ### Example 1
 
-**Input**
-
-```text
-s = "zxyzxyz"
-```
-
-**Output**
-
-```text
-3
-```
-
-**Explanation**
-
-The longest substring without repeating characters is:
-
-```text
-"zxy"
-```
-
-or
-
-```text
-"xyz"
-```
-
-Both have length **3**.
-
----
+**Input:** `s = "zxyzxyz"`
+**Output:** `3`
+**Reason:** The substring `"xyz"` has all unique characters and is the longest such substring.
 
 ### Example 2
 
-**Input**
-
-```text
-s = "xxxx"
-```
-
-**Output**
-
-```text
-1
-```
-
-**Explanation**
-
-Only one unique character can exist in a substring.
+**Input:** `s = "xxxx"`
+**Output:** `1`
+**Reason:** Every valid substring can only contain one `x`.
 
 ---
 
-### Example 3
+## Key Idea
 
-**Input**
+We need the **longest window** with **all distinct characters**.
 
-```text
-s = "abcabcbb"
-```
+Two approaches:
 
-**Output**
-
-```text
-3
-```
-
-Longest substring:
-
-```text
-abc
-```
+1. **Brute Force** — try every starting point and expand until a duplicate appears.
+2. **Optimal Sliding Window** — maintain a window of unique characters and move pointers efficiently.
 
 ---
 
-# Intuition
+# 1) Brute Force Solution
 
-We need the **longest window** that contains **only unique characters**.
+## Python Code
 
-Whenever a duplicate appears,
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        res = 0
+        for i in range(len(s)):
+            charSet = set()
+            for j in range(i, len(s)):
+                if s[j] in charSet:
+                    break
+                charSet.add(s[j])
+            res = max(res, len(charSet))
+        return res
+```
 
-the window becomes invalid.
+## How It Works
 
-So we **move the left pointer** until the duplicate is removed.
+* Fix a starting index `i`.
+* Expand to the right using `j`.
+* Keep a `set` of characters seen in the current substring.
+* If a character repeats, stop expanding for that start.
+* Track the maximum length found.
 
-This is a classic **Sliding Window** problem.
+## Time and Space Complexity
+
+* **Time:** `O(n^2)`
+* **Space:** `O(n)` for the set in the worst case
+
+## Why It Works
+
+For every possible substring start, we greedily extend until repetition breaks the validity.
 
 ---
 
-# Why Sliding Window?
+# 2) Optimal Solution — Sliding Window
 
-Instead of checking every possible substring,
-
-maintain a window
-
-```text
-[left ........ right]
-```
-
-that always contains **unique characters**.
-
-Whenever a duplicate is found,
-
-move the left pointer.
-
----
-
-# Visual Representation
-
-## Example
-
-```text
-s = "abcabcbb"
-```
-
-Initially
-
-```text
-Window
-
-[a]
-
-Length = 1
-```
-
----
-
-Add **b**
-
-```text
-[a b]
-
-Length = 2
-```
-
----
-
-Add **c**
-
-```text
-[a b c]
-
-Length = 3
-```
-
----
-
-Next character
-
-```text
-a
-```
-
-Duplicate found.
-
-Previous **a** was at index **0**.
-
-Move left pointer to
-
-```text
-0 + 1 = 1
-```
-
-Window becomes
-
-```text
-[b c a]
-
-Length = 3
-```
-
----
-
-Next character
-
-```text
-b
-```
-
-Duplicate found.
-
-Move left pointer
-
-```text
-2
-```
-
-Window
-
-```text
-[c a b]
-```
-
-Still length
-
-```text
-3
-```
-
-Continue until the end.
-
-Answer
-
-```text
-3
-```
-
----
-
-# Sliding Window
-
-We maintain
-
-```text
-l → left pointer
-
-r → right pointer
-```
-
-Also maintain a hashmap
-
-```text
-Character
-
-↓
-
-Last Seen Index
-```
-
-Example
-
-```text
-a → 3
-
-b → 6
-
-c → 5
-```
-
-Whenever a duplicate is found,
-
-jump the left pointer directly.
-
----
-
-# Algorithm
-
-1. Create a hashmap storing the last index of every character.
-2. Initialize
-
-```text
-left = 0
-```
-
-3. Traverse using the right pointer.
-4. If the current character already exists,
-
-move
+## C++ Code
 
 ```cpp
-left = max(left, lastSeen[current] + 1);
-```
-
-5. Store the current index.
-6. Update the maximum window size.
-
----
-
-# C++ Code
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
+        unordered_map<char, int> mp;
+        int l = 0, res = 0;
 
-        unordered_map<char,int> lastSeen;
-
-        int left = 0;
-        int ans = 0;
-
-        for(int right = 0; right < s.size(); right++) {
-
-            if(lastSeen.find(s[right]) != lastSeen.end()) {
-
-                left = max(left, lastSeen[s[right]] + 1);
+        for (int r = 0; r < s.size(); r++) {
+            if (mp.find(s[r]) != mp.end()) {
+                l = max(mp[s[r]] + 1, l);
             }
-
-            lastSeen[s[right]] = right;
-
-            ans = max(ans, right - left + 1);
+            mp[s[r]] = r;
+            res = max(res, r - l + 1);
         }
-
-        return ans;
+        return res;
     }
 };
 ```
+
+## Core Idea
+
+Use a **sliding window** `[l ... r]` such that the substring inside it always has **unique characters**.
+
+### What the map stores
+
+`mp[ch] = last index where character ch appeared`
+
+### Why `l = max(mp[s[r]] + 1, l)`?
+
+This prevents the left pointer from moving **backward**.
+
+* If the repeated character was inside the current window, move `l` right past its previous position.
+* If the repeated character was seen earlier outside the current window, do nothing.
+
+---
+
+## Visual Intuition
+
+Think of the window as a box:
+
+```text
+l                                      r
+|--------------------------------------|
+current substring with unique chars
+```
+
+When a duplicate appears:
+
+* shrink the left side until the duplicate is removed
+* continue expanding from the right
 
 ---
 
 # Dry Run
 
-Input
+## Dry Run for `s = "zxyzxyz"`
+
+We track:
+
+* `l` = left pointer
+* `r` = right pointer
+* `mp` = last seen index of each character
+* `res` = answer so far
+
+| r | s[r] | Seen Before? | Action on l           | Window After Update | res |
+| - | ---- | ------------ | --------------------- | ------------------- | --- |
+| 0 | z    | No           | `l = 0`               | `z`                 | 1   |
+| 1 | x    | No           | `l = 0`               | `zx`                | 2   |
+| 2 | y    | No           | `l = 0`               | `zxy`               | 3   |
+| 3 | z    | Yes, at 0    | `l = max(0+1, 0) = 1` | `xyz`               | 3   |
+| 4 | x    | Yes, at 1    | `l = max(1+1, 1) = 2` | `yzx`               | 3   |
+| 5 | y    | Yes, at 2    | `l = max(2+1, 2) = 3` | `zxy`               | 3   |
+| 6 | z    | Yes, at 3    | `l = max(3+1, 3) = 4` | `xyz`               | 3   |
+
+### Final Answer
+
+`res = 3`
+
+---
+
+## Dry Run for `s = "xxxx"`
+
+| r | s[r] | Seen Before? | Action on l | Window | res |
+| - | ---- | ------------ | ----------- | ------ | --- |
+| 0 | x    | No           | `l = 0`     | `x`    | 1   |
+| 1 | x    | Yes, at 0    | `l = 1`     | `x`    | 1   |
+| 2 | x    | Yes, at 1    | `l = 2`     | `x`    | 1   |
+| 3 | x    | Yes, at 2    | `l = 3`     | `x`    | 1   |
+
+### Final Answer
+
+`res = 1`
+
+---
+
+# Step-by-Step Visualization of the Optimal Approach
+
+## Example: `s = "abcabcbb"`
+
+### Step 1
 
 ```text
-s = "zxyzxyz"
+Window: a
 ```
 
-| Right | Character | Left Before | Left After | Current Window | Length | Max |
-|------:|-----------|------------:|-----------:|----------------|-------:|----:|
-| 0 | z | 0 | 0 | z | 1 | 1 |
-| 1 | x | 0 | 0 | zx | 2 | 2 |
-| 2 | y | 0 | 0 | zxy | 3 | 3 |
-| 3 | z | 0 | 1 | xyz | 3 | 3 |
-| 4 | x | 1 | 2 | yzx | 3 | 3 |
-| 5 | y | 2 | 3 | zxy | 3 | 3 |
-| 6 | z | 3 | 4 | xyz | 3 | 3 |
-
-Final Answer
+### Step 2
 
 ```text
-3
+Window: ab
+```
+
+### Step 3
+
+```text
+Window: abc
+```
+
+### Step 4 — duplicate `a`
+
+```text
+Before: [abc]a
+Duplicate found: a
+Move l to one position after previous a
+New window: bca
+```
+
+### Step 5 — duplicate `b`
+
+```text
+Before: [bca]b
+Move l forward again
+New window: cab
+```
+
+This continues while maintaining uniqueness.
+
+---
+
+# Why the Optimal Solution is Better
+
+## Brute Force
+
+* Rebuilds a set for every starting point
+* Rechecks many characters repeatedly
+* Slower for larger strings
+
+## Sliding Window
+
+* Each character is processed efficiently
+* Left pointer only moves forward
+* Much faster and cleaner for revision
+
+---
+
+# Important Observations
+
+* A substring must be **contiguous**.
+* The window must always contain **distinct characters**.
+* When a duplicate is found, do **not** blindly move `l` by 1.
+* Use the **last seen index** to jump `l` directly.
+* `max(mp[s[r]] + 1, l)` is essential to avoid invalid backward movement.
+
+---
+
+# Template to Remember
+
+```text
+1. Keep two pointers: l and r
+2. Expand r one step at a time
+3. If current char is repeated inside the window:
+   - move l to one position after its last occurrence
+4. Update last seen index
+5. Update answer with current window length
 ```
 
 ---
 
-# Why Do We Use max()?
+# Final Revision Note
 
-Suppose
+This problem is a classic **sliding window + hash map** problem.
 
-```text
-String
-
-abba
-```
-
-Processing
-
-```text
-a
-b
-b
-a
-```
-
-When we reach the last **a**
-
-Previous **a**
-
-```text
-Index = 0
-```
-
-Current left pointer
-
-```text
-2
-```
-
-If we simply write
-
-```cpp
-left = lastSeen['a'] + 1;
-```
-
-Left becomes
-
-```text
-1
-```
-
-It moves **backwards**, which is wrong.
-
-Instead
-
-```cpp
-left = max(left, lastSeen['a'] + 1);
-```
-
-ensures
-
-```text
-Left never moves backwards.
-```
+* Brute force checks all starts.
+* Optimal solution stores the **last seen index** of each character.
+* The answer is the maximum valid window length seen while scanning the string once.
 
 ---
 
-# Complexity Analysis
+# One-Line Summary
 
-| Operation | Complexity |
-|-----------|------------|
-| Traverse String | O(n) |
-| HashMap Lookup | O(1) Average |
-| Overall Time | **O(n)** |
-| Extra Space | **O(min(n,m))** |
-
-where
-
-- `n` = length of string
-- `m` = character set size
-
----
-
-# Edge Cases
-
-| Input | Output |
-|--------|--------|
-| `""` | 0 |
-| `"a"` | 1 |
-| `"aaaa"` | 1 |
-| `"abcd"` | 4 |
-| `"pwwkew"` | 3 |
-| `"abcabcbb"` | 3 |
-| `"dvdf"` | 3 |
-
----
-
-# Key Takeaways
-
-- ✅ Use the **Sliding Window** technique.
-- ✅ Store the **last occurrence** of every character.
-- ✅ Move the left pointer only when a duplicate appears.
-- ✅ Use `max()` so the left pointer never moves backward.
-- ✅ Window size is
-
-```cpp
-right - left + 1
-```
-
-- ✅ Time Complexity is **O(n)**.
-
----
-
-# Quick Revision
-
-1. Create a hashmap.
-2. Start with
-
-```text
-left = 0
-```
-
-3. Traverse using the right pointer.
-4. Duplicate?
-
-```cpp
-left = max(left, lastSeen[ch] + 1);
-```
-
-5. Update hashmap.
-6. Update answer.
-
----
-
-# Visual Memory Aid
-
-```text
-String
-
-a b c a b c b b
-      ↑       ↑
-      l       r
-```
-
-Duplicate found
-
-↓
-
-Move left
-
-```text
-a b c a b c b b
-  ↑           ↑
-  l           r
-```
-
-Window always contains **unique characters**.
-
----
-
-# Pattern Recognition
-
-Whenever you hear
-
-- Longest Substring
-- No Repeating Characters
-- At Most K Distinct Characters
-- Minimum Window Substring
-- Fixed Window
-- Variable Window
-
-Think immediately
-
-```text
-SLIDING WINDOW
-```
-
-This is one of the most important Sliding Window interview patterns.
+**Use a moving window of unique characters and jump the left pointer past duplicates using last seen indices.**
