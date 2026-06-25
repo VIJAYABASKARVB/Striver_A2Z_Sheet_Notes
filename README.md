@@ -67,7 +67,23 @@
 | 02 | Queue Using Array (Circular) | [Link](./Stack-Queue/Learning/02_Implement_Queue_Using_Arrays/Implement_Queue_Using_Arrays.md) |
 | 03 | Implement Stack using Single Queue | [Link](./Stack-Queue/Learning/03_Implement_Stack_Using_Queue/Implement_Stack_Using_Queue.md) |
 | 04 | Implement Queue using Stack | [Link](./Stack-Queue/Learning/04_Implement_Queue_Using_Stack/Implement_Queue_Using_Stack.md) |
-| 05 | Implement Stack using LinkedList | ⏳ |
-| 06 | Implement Queue using LinkedList | ⏳ |
-| 07 | Balanced Parenthesis | ⏳ |
-| 08 | Implement Min Stack | ⏳ |
+| 05 | Implement Stack using LinkedList | [Link](./Stack-Queue/Learning/05_Implement_Stack_Using_LinkedList/Implement_Stack_Using_LinkedList.md) |
+| 06 | Implement Queue using LinkedList | [Link](./Stack-Queue/Learning/06_Implement_Queue_Using_LinkedList/Implement_Queue_Using_LinkedList.md) |
+| 07 | Check for Balanced Parentheses | [Link](./Stack-Queue/Learning/07_Balanced_Parenthesis/Balanced_Parenthesis.md) |
+| 08 | Implement Min Stack | [Link](./Stack-Queue/Learning/08_Implement_Min_Stack/Implement_Min_Stack.md) |
+
+### 📊 Mono-stack
+
+| # | Problem | Solution |
+|---|---------|----------|
+| 01 | Next Greater Element I | [Link](./Stack-Queue/Mono-stack/01_Next_Greater_Element/Next_Greater_Element.md) |
+| 02 | Next Greater Element II | [Link](./Stack-Queue/Mono-stack/02_Next_Greater_Element_II/Next_Greater_Element_II.md) |
+| 03 | Next Smaller Element | [Link](./Stack-Queue/Mono-stack/03_Next_Smaller_Element/Next_Smaller_Element.md) |
+| 04 | Number of Greater Elements to the Right | [Link](./Stack-Queue/Mono-stack/04_Number_of_Greater_Elements_to_the_Right/Number_of_Greater_Elements_to_the_Right.md) |
+| 05 | Trapping Rainwater | [Link](./Stack-Queue/Mono-stack/05_Trapping_Rainwater/Trapping_Rainwater.md) |
+| 06 | Sum of Subarray Minimums | [Link](./Stack-Queue/Mono-stack/06_Sum_of_Subarray_Minimums/Sum_of_Subarray_Minimums.md) |
+| 07 | Asteroid Collision | [Link](./Stack-Queue/Mono-stack/07_Asteroid_Collision/Asteroid_Collision.md) |
+| 08 | Sum of Subarray Ranges | [Link](./Stack-Queue/Mono-stack/08_Sum_of_Subarray_Ranges/Sum_of_Subarray_Ranges.md) |
+| 09 | Remove K Digits | [Link](./Stack-Queue/Mono-stack/09_Remove_K_Digits/Remove_K_Digits.md) |
+| 10 | Largest Rectangle in Histogram | [Link](./Stack-Queue/Mono-stack/10_Largest_Rectangle_in_a_Histogram/Largest_Rectangle_in_a_Histogram.md) |
+| 11 | Maximal Rectangle | [Link](./Stack-Queue/Mono-stack/11_Maximal_Rectangle/Maximal_Rectangle.md) |
