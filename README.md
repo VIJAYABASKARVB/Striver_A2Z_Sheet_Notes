@@ -87,3 +87,18 @@
 | 09 | Remove K Digits | ⏳ |
 | 10 | Largest Rectangle in Histogram | ⏳ |
 | 11 | Maximal Rectangle | ⏳ |
+
+## Sliding Window & Two Pointer Combined Problems
+
+### 🟠 Medium Problems
+
+| # | Problem | Solution |
+|---|---------|----------|
+| 01 | Longest Substring Without Repeating Characters | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/01_Longest_Substring_Without_Repeating_Characters/Longest_Substring_Without_Repeating_Characters.md) |
+| 02 | Max Consecutive Ones III | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/02_Max_Consecutive_Ones_III/Max_Consecutive_Ones_III.md) |
+| 03 | Fruit Into Baskets | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/03_Fruit_Into_Baskets/Fruit_Into_Baskets.md) |
+| 04 | Longest Repeating Character Replacement | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/04_Longest_Repeating_Character_Replacement/Longest_Repeating_Character_Replacement.md) |
+| 05 | Binary Subarrays With Sum | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/05_Binary_Subarrays_With_Sum/Binary_Subarrays_With_Sum.md) |
+| 06 | Count Number of Nice Subarrays | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/06_Count_Number_of_Nice_Subarrays/Count_Number_of_Nice_Subarrays.md) |
+| 07 | Number of Substrings Containing All Three Characters | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/07_Number_of_Substrings_Containing_All_Three_Characters/Number_of_Substrings_Containing_All_Three_Characters.md) |
+| 08 | Maximum Points You Can Obtain from Cards | [Link](./Sliding%20Window%20&%20Two%20Pointer%20Combined%20Problems/Medium%20Problems/08_Maximum_Points_You_Can_Obtain_from_Cards/Maximum_Points_You_Can_Obtain_from_Cards.md) |
