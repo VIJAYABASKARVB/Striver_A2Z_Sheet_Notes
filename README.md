@@ -25,7 +25,7 @@
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
-| 01 | Two Sum | [LeetCode](https://leetcode.com/problems/two-sum/) | ⏳ |
+| 01 | Two Sum | [LeetCode](https://leetcode.com/problems/two-sum/) | [Link](./Arrays/2.Medium/01_Two_Sum/Two_Sum.md) |
 | 02 | Sort Colors (0s, 1s, 2s) | [LeetCode](https://leetcode.com/problems/sort-colors/) | ⏳ |
 | 03 | Majority Element I | [LeetCode](https://leetcode.com/problems/majority-element/) | ⏳ |
 | 04 | Kadane's Algorithm | [LeetCode](https://leetcode.com/problems/maximum-subarray/) | ⏳ |
