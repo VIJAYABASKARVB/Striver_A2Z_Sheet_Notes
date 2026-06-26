@@ -67,26 +67,26 @@
 | 02 | Queue Using Array (Circular) | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-array/1) | [Link](./Stack-Queue/Learning/02_Implement_Queue_Using_Arrays/Implement_Queue_Using_Arrays.md) |
 | 03 | Implement Stack using Single Queue | [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) | [Link](./Stack-Queue/Learning/03_Implement_Stack_Using_Queue/Implement_Stack_Using_Queue.md) |
 | 04 | Implement Queue using Stack | [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [Link](./Stack-Queue/Learning/04_Implement_Queue_Using_Stack/Implement_Queue_Using_Stack.md) |
-| 05 | Implement Stack using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1) | ⏳ |
-| 06 | Implement Queue using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1) | ⏳ |
+| 05 | Implement Stack using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1) | [Link](./Stack-Queue/Learning/05_Implement_Stack_Using_LinkedList/Implement_Stack_Using_LinkedList.md) |
+| 06 | Implement Queue using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1) | [Link](./Stack-Queue/Learning/06_Implement_Queue_Using_LinkedList/Implement_Queue_Using_LinkedList.md) |
 | 07 | Check for Balanced Parentheses | [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [Link](./Stack-Queue/Learning/07_Balanced_Parenthesis/Balanced_Parenthesis.md) |
-| 08 | Implement Min Stack | [LeetCode](https://leetcode.com/problems/min-stack/) | ⏳ |
+| 08 | Implement Min Stack | [LeetCode](https://leetcode.com/problems/min-stack/) | [Link](./Stack-Queue/Learning/08_Implement_Min_Stack/Implement_Min_Stack.md) |
 
 ### 📊 Mono-stack
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
 | 01 | Next Greater Element I | [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [Link](./Stack-Queue/Mono-stack/01_Next_Greater_Element/Next_Greater_Element.md) |
-| 02 | Next Greater Element II | [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | ⏳ |
-| 03 | Next Smaller Element | [GFG](https://www.geeksforgeeks.org/problems/next-smaller-element/1) | ⏳ |
-| 04 | Number of Greater Elements to the Right | [GFG](https://www.geeksforgeeks.org/problems/count-of-greater-elements-to-the-right/1) | ⏳ |
-| 05 | Trapping Rainwater | [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | ⏳ |
-| 06 | Sum of Subarray Minimums | [LeetCode](https://leetcode.com/problems/sum-of-subarray-minimums/) | ⏳ |
-| 07 | Asteroid Collision | [LeetCode](https://leetcode.com/problems/asteroid-collision/) | ⏳ |
-| 08 | Sum of Subarray Ranges | [LeetCode](https://leetcode.com/problems/sum-of-subarray-ranges/) | ⏳ |
-| 09 | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | ⏳ |
-| 10 | Largest Rectangle in Histogram | [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | ⏳ |
-| 11 | Maximal Rectangle | [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | ⏳ |
+| 02 | Next Greater Element II | [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [Link](./Stack-Queue/Mono-stack/02_Next_Greater_Element_II/Next_Greater_Element_II.md) |
+| 03 | Next Smaller Element | [GFG](https://www.geeksforgeeks.org/problems/next-smaller-element/1) | [Link](./Stack-Queue/Mono-stack/03_Next_Smaller_Element/Next_Smaller_Element.md) |
+| 04 | Number of Greater Elements to the Right | [GFG](https://www.geeksforgeeks.org/problems/count-of-greater-elements-to-the-right/1) | [Link](./Stack-Queue/Mono-stack/04_Number_of_Greater_Elements_to_the_Right/Number_of_Greater_Elements_to_the_Right.md) |
+| 05 | Trapping Rainwater | [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [Link](./Stack-Queue/Mono-stack/05_Trapping_Rainwater/Trapping_Rainwater.md) |
+| 06 | Sum of Subarray Minimums | [LeetCode](https://leetcode.com/problems/sum-of-subarray-minimums/) | [Link](./Stack-Queue/Mono-stack/06_Sum_of_Subarray_Minimums/Sum_of_Subarray_Minimums.md) |
+| 07 | Asteroid Collision | [LeetCode](https://leetcode.com/problems/asteroid-collision/) | [Link](./Stack-Queue/Mono-stack/07_Asteroid_Collision/Asteroid_Collision.md) |
+| 08 | Sum of Subarray Ranges | [LeetCode](https://leetcode.com/problems/sum-of-subarray-ranges/) | [Link](./Stack-Queue/Mono-stack/08_Sum_of_Subarray_Ranges/Sum_of_Subarray_Ranges.md) |
+| 09 | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | [Link](./Stack-Queue/Mono-stack/09_Remove_K_Digits/Remove_K_Digits.md) |
+| 10 | Largest Rectangle in Histogram | [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Link](./Stack-Queue/Mono-stack/10_Largest_Rectangle_in_a_Histogram/Largest_Rectangle_in_a_Histogram.md) |
+| 11 | Maximal Rectangle | [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [Link](./Stack-Queue/Mono-stack/11_Maximal_Rectangle/Maximal_Rectangle.md) |
 
 ## Sliding Window & Two Pointer Combined Problems
 
