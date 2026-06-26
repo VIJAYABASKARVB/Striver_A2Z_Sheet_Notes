@@ -38,7 +38,7 @@
 | 11 | Set Matrix Zeroes | [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [Link](./Arrays/2.Medium/11_Set_Matrix_Zeroes/set_matrix_to_zeros.md) |
 | 12 | Rotate Matrix by 90° | [LeetCode](https://leetcode.com/problems/rotate-image/) | [Link](./Arrays/2.Medium/12_Rotate_Matrix_by_90_Degrees/rotate_matrix_by_90Degree.md) |
 | 13 | Spiral Matrix | [LeetCode](https://leetcode.com/problems/spiral-matrix/) | [Link](./Arrays/2.Medium/13_Print_the_Matrix_in_Spiral_Manner/sprial_matrix.md) |
-| 14 | Count Subarrays with Given Sum | [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | ⏳ |
+| 14 | Count Subarrays with Given Sum | [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [Link](./Arrays/2.Medium/14_Count_Subarrays_with_Given_Sum/count_subarray_sum.md) |
 
 ### 🔴 Hard
 
