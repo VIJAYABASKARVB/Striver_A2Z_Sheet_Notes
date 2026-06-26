@@ -26,17 +26,17 @@
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
 | 01 | Two Sum | [LeetCode](https://leetcode.com/problems/two-sum/) | [Link](./Arrays/2.Medium/01_Two_Sum/Two_Sum.md) |
-| 02 | Sort Colors (0s, 1s, 2s) | [LeetCode](https://leetcode.com/problems/sort-colors/) | ⏳ |
-| 03 | Majority Element I | [LeetCode](https://leetcode.com/problems/majority-element/) | ⏳ |
-| 04 | Kadane's Algorithm | [LeetCode](https://leetcode.com/problems/maximum-subarray/) | ⏳ |
-| 05 | Print Maximum Subarray Sum | [LeetCode](https://leetcode.com/problems/maximum-subarray/) | ⏳ |
-| 06 | Stock Buy and Sell | [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ⏳ |
-| 07 | Rearrange Array by Sign | [LeetCode](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | ⏳ |
-| 08 | Next Permutation | [LeetCode](https://leetcode.com/problems/next-permutation/) | ⏳ |
-| 09 | Leaders in an Array | [GFG](https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115621/1) | ⏳ |
-| 10 | Longest Consecutive Sequence | [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | ⏳ |
-| 11 | Set Matrix Zeroes | [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | ⏳ |
-| 12 | Rotate Matrix by 90° | [LeetCode](https://leetcode.com/problems/rotate-image/) | ⏳ |
+| 02 | Sort Colors (0s, 1s, 2s) | [LeetCode](https://leetcode.com/problems/sort-colors/) | [Link](./Arrays/2.Medium/02_Sort_an_Array_of_0s_1s_and_2s/Sort_an_array_of_0s_1s_and_2s.md) |
+| 03 | Majority Element I | [LeetCode](https://leetcode.com/problems/majority-element/) | [Link](./Arrays/2.Medium/03_Majority_Element_I/Majority_Element_I.md) |
+| 04 | Kadane's Algorithm | [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [Link](./Arrays/2.Medium/04_Kadanes_Algorithm/kadanes_algorithm.md) |
+| 05 | Print Maximum Subarray Sum | [LeetCode](https://leetcode.com/problems/maximum-subarray/) | [Link](./Arrays/2.Medium/05_Print_Subarray_with_Maximum_Subarray_Sum/Above_Follow_up.md) |
+| 06 | Stock Buy and Sell | [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Link](./Arrays/2.Medium/06_Stock_Buy_and_Sell/stock_buy_sell.md) |
+| 07 | Rearrange Array by Sign | [LeetCode](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | [Link](./Arrays/2.Medium/07_Rearrange_Array_Elements_by_Sign/rearrange_array_elements_by_sign.md) |
+| 08 | Next Permutation | [LeetCode](https://leetcode.com/problems/next-permutation/) | [Link](./Arrays/2.Medium/08_Next_Permutation/next_permutation.md) |
+| 09 | Leaders in an Array | [GFG](https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115621/1) | [Link](./Arrays/2.Medium/09_Leaders_in_an_Array/Leader_in_an_array.md) |
+| 10 | Longest Consecutive Sequence | [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) | [Link](./Arrays/2.Medium/10_Longest_Consecutive_Sequence_in_an_Array/longest_consecutive_sequence_in_array.md) |
+| 11 | Set Matrix Zeroes | [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/) | [Link](./Arrays/2.Medium/11_Set_Matrix_Zeroes/set_matrix_to_zeros.md) |
+| 12 | Rotate Matrix by 90° | [LeetCode](https://leetcode.com/problems/rotate-image/) | [Link](./Arrays/2.Medium/12_Rotate_Matrix_by_90_Degrees/rotate_matrix_by_90Degree.md) |
 | 13 | Spiral Matrix | [LeetCode](https://leetcode.com/problems/spiral-matrix/) | ⏳ |
 | 14 | Count Subarrays with Given Sum | [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | ⏳ |
 
