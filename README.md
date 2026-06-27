@@ -69,7 +69,7 @@
 | 04 | Search Insert Position | [LeetCode](https://leetcode.com/problems/search-insert-position/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/04_Search_Insert_Position/Search_Insert_Position.md) |
 | 05 | Floor and Ceil in Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/05_Floor_and_Ceil_in_Sorted_Array/Floor_and_Ceil_in_Sorted_Array.md) |
 | 06 | First and Last Occurrence | [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/06_First_and_Last_Occurrence/First_and_Last_Occurrence.md) |
-| 07 | Count Occurrences in a Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/number-of-occurrence/1) | ⏳ |
+| 07 | Count Occurrences in a Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/number-of-occurrence/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/07_Count_Occurrences_in_a_Sorted_Array/Count_Occurrences_in_a_Sorted_Array.md) |
 | 08 | Search in Rotated Sorted Array I | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | ⏳ |
 | 09 | Search in Rotated Sorted Array II | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | ⏳ |
 | 10 | Find Minimum in Rotated Sorted Array | [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | ⏳ |
