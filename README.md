@@ -71,7 +71,7 @@
 | 06 | First and Last Occurrence | [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/06_First_and_Last_Occurrence/First_and_Last_Occurrence.md) |
 | 07 | Count Occurrences in a Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/number-of-occurrence/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/07_Count_Occurrences_in_a_Sorted_Array/Count_Occurrences_in_a_Sorted_Array.md) |
 | 08 | Search in Rotated Sorted Array I | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/08_Search_in_Rotated_Sorted_Array_I/Search_in_Rotated_Sorted_Array_I.md) |
-| 09 | Search in Rotated Sorted Array II | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | ⏳ |
+| 09 | Search in Rotated Sorted Array II | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/09_Search_in_Rotated_Sorted_Array_II/Search_in_Rotated_Sorted_Array_II.md) |
 | 10 | Find Minimum in Rotated Sorted Array | [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | ⏳ |
 | 11 | Find How Many Times Array is Rotated | [GFG](https://www.geeksforgeeks.org/problems/rotation/1) | ⏳ |
 | 12 | Single Element in a Sorted Array | [LeetCode](https://leetcode.com/problems/single-element-in-a-sorted-array/) | ⏳ |
