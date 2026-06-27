@@ -1,12 +1,16 @@
-# Last Occurrence in a Sorted Array
+# Find First and Last Position of Element in Sorted Array (LeetCode 34)
 
 ## Problem Statement
 
-Given a **sorted array** of `N` integers and a target value `key`, return the **last occurrence** (last index) of the target.
+Given a **sorted array** `nums` in non-decreasing order and a target value, return the **starting index** and **ending index** of the target.
 
-If the target is not present, return `-1`.
+If the target is not present, return
 
-> **Note:** Use **0-based indexing**.
+```text
+[-1,-1]
+```
+
+You **must** solve the problem in **O(log N)** time.
 
 ---
 
@@ -17,24 +21,15 @@ If the target is not present, return `-1`.
 **Input**
 
 ```text
-arr = [3,4,13,13,13,20,40]
-key = 13
+nums = [5,7,7,8,8,10]
+
+target = 8
 ```
 
 **Output**
 
 ```text
-4
-```
-
-**Explanation**
-
-```text
-13 appears at indices:
-
-2,3,4
-
-The last occurrence is index 4.
+[3,4]
 ```
 
 ---
@@ -44,641 +39,891 @@ The last occurrence is index 4.
 **Input**
 
 ```text
-arr = [3,4,13,13,13,20,40]
-key = 60
+nums = [5,7,7,8,8,10]
+
+target = 6
 ```
 
 **Output**
 
 ```text
--1
+[-1,-1]
 ```
 
-**Explanation**
+---
+
+### Example 3
+
+**Input**
 
 ```text
-60 is not present.
+nums = []
+
+target = 0
+```
+
+**Output**
+
+```text
+[-1,-1]
 ```
 
 ---
 
 # Core Idea
 
-Unlike normal Binary Search,
+Instead of finding the first and last occurrence separately,
 
-we **do not stop** when we find the target.
+we can solve the problem using
 
-Instead,
+- **Lower Bound**
+- **Upper Bound**
 
-we continue searching on the **right half** because there may be another occurrence.
+because
+
+```text
+First Occurrence
+
+=
+
+Lower Bound(target)
+```
+
+and
+
+```text
+Last Occurrence
+
+=
+
+Upper Bound(target)-1
+```
 
 ---
 
 # Pattern
 
 ```text
-Binary Search on Answer
+Binary Search
 ```
 
 ---
 
-# Brute Force Approach
-
-## Idea
-
-Start from the **end** of the array.
-
-The first occurrence encountered is automatically the **last occurrence**.
-
----
-
-## Algorithm
-
-1. Traverse from `n-1` to `0`.
-2. If `arr[i] == key`, return `i`.
-3. If traversal ends, return `-1`.
-
----
-
-## Code
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-// find last index of key by scanning from right
-int solve(int n, int key, vector<int>& v) {
-    int res = -1;
-
-    for (int i = n - 1; i >= 0; i--) {
-        if (v[i] == key) {
-            res = i;
-            break;
-        }
-    }
-
-    return res;
-}
-```
-
----
-
-## Dry Run
-
-```text
-Array
-
-3 4 13 13 13 20 40
-
-Start from end
-
-40 ❌
-20 ❌
-13 ✅
-
-Return index 4
-```
-
----
-
-## Complexity
-
-### Time
-
-```text
-O(N)
-```
-
-### Space
-
-```text
-O(1)
-```
-
----
-
-# Optimal Approach (Binary Search)
-
-## Key Observation
-
-Whenever we find the target,
-
-it **might not be the last occurrence**.
-
-So,
-
-- Save the index.
-- Continue searching on the **right side**.
-
----
-
-## Code
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-int solve(int n, int key, vector<int>& v) {
-
-    int start = 0;
-    int end = n - 1;
-    int res = -1;
-
-    while (start <= end) {
-
-        int mid = start + (end - start) / 2;
-
-        if (v[mid] == key) {
-            res = mid;
-            start = mid + 1;
-        }
-        else if (key < v[mid]) {
-            end = mid - 1;
-        }
-        else {
-            start = mid + 1;
-        }
-    }
-
-    return res;
-}
-```
-
----
-
-# Why Move Right?
+# Important Observation
 
 Suppose
 
 ```text
-3 4 13 13 13 20 40
+nums =
+
+[5,7,7,8,8,10]
 ```
 
-Binary Search finds
+Target
 
 ```text
-13
-
-at index 3
+8
 ```
 
-Is it the last?
+Lower Bound
 
 ```text
-No.
+First element >=8
 
-There is another 13 at index 4.
+↓
+
+Index 3
 ```
 
-Therefore,
-
-after finding the target,
-
-move right.
-
----
-
-# Visualization
-
-Need
+Upper Bound
 
 ```text
-Last occurrence of 13
+First element >8
+
+↓
+
+Index 5
 ```
+
+Therefore
 
 ```text
-Index
+Last occurrence
 
-0 1 2 3 4 5 6
+=
 
-Value
+Upper Bound-1
 
-3 4 13 13 13 20 40
+=
 
-      ↑  ↑  ↑
+5-1
 
-Need this one
-         ↑
-      Index 4
+=
+
+4
 ```
-
----
-
-# Pointer Placement Visualization
-
-### Initial
-
-```text
-Index
-
-0 1 2 3 4 5 6
-
-Value
-
-3 4 13 13 13 20 40
-
-S     M       E
-```
-
-```
-start = 0
-end = 6
-
-mid = 3
-```
-
-Current value
-
-```text
-13
-```
-
-Target found
-
-Store answer
-
-```text
-res = 3
-```
-
-But continue RIGHT
-
-```text
-start = mid + 1
-```
-
----
-
-### Next
-
-```text
-Index
-
-0 1 2 3 4 5 6
-
-Value
-
-3 4 13 13 13 20 40
-
-        S M E
-```
-
-```
-start = 4
-end = 6
-
-mid = 5
-```
-
-Current value
-
-```text
-20
-```
-
-Too large
-
-Move LEFT
-
-```text
-end = 4
-```
-
----
-
-### Next
-
-```text
-Index
-
-0 1 2 3 4 5 6
-
-Value
-
-3 4 13 13 13 20 40
-
-        S
-        M
-        E
-```
-
-```
-mid = 4
-```
-
-Current value
-
-```text
-13
-```
-
-Store
-
-```text
-res = 4
-```
-
-Move RIGHT
-
-```text
-start = 5
-```
-
-Now
-
-```text
-start > end
-```
-
-Stop.
 
 Answer
 
 ```text
+[3,4]
+```
+
+---
+
+# Formula
+
+```text
+First Occurrence
+
+=
+
+Lower Bound(target)
+
+------------------------
+
+Last Occurrence
+
+=
+
+Upper Bound(target)-1
+```
+
+This is the entire problem.
+
+---
+
+# Optimal Solution
+
+```cpp
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int n = nums.size();
+
+        // Lower Bound
+        int low = 0, high = n - 1;
+        int lb = n;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (nums[mid] >= target) {
+                lb = mid;
+                high = mid - 1;
+            }
+            else {
+                low = mid + 1;
+            }
+        }
+
+        // Target doesn't exist
+        if (lb == n || nums[lb] != target)
+            return {-1,-1};
+
+        // Upper Bound
+        low = 0;
+        high = n - 1;
+        int ub = n;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (nums[mid] > target) {
+                ub = mid;
+                high = mid - 1;
+            }
+            else {
+                low = mid + 1;
+            }
+        }
+
+        return {lb, ub - 1};
+    }
+};
+```
+
+---
+
+# Why Lower Bound Gives First Occurrence?
+
+Lower Bound finds
+
+```text
+First element
+
+>= target
+```
+
+Suppose
+
+```text
+5 7 7 8 8 10
+
+        ↑
+
+First 8
+```
+
+The first value
+
+```text
+>=8
+```
+
+is exactly
+
+```text
+the first occurrence.
+```
+
+---
+
+# Why Upper Bound Gives Last Occurrence?
+
+Upper Bound finds
+
+```text
+First element
+
+> target
+```
+
+Suppose
+
+```text
+5 7 7 8 8 10
+
+            ↑
+
+First >8
+```
+
+This is
+
+```text
+10
+```
+
+located at index
+
+```text
+5
+```
+
+Therefore
+
+```text
+Previous index
+
+↓
+
 4
 ```
 
----
-
-# Complete Dry Run
-
-## Input
+must be
 
 ```text
-arr=[3,4,13,13,13,20,40]
-
-key=13
+the last occurrence.
 ```
 
 ---
+
+# Complete Visualization
+
+```
+Index
+
+0 1 2 3 4 5
+
+Value
+
+5 7 7 8 8 10
+
+      LB      UB
+       ↓       ↓
+
+5 7 7 8 8 10
+      ↑   ↑
+
+ First   Last
+```
+
+---
+
+# Pointer Placement (Lower Bound)
+
+Need
+
+```text
+First index >=8
+```
 
 Initial
 
 ```text
-start=0
+Index
 
-end=6
+0 1 2 3 4 5
 
-res=-1
+5 7 7 8 8 10
+
+L     M     H
 ```
 
----
+```
+mid=2
 
-### Iteration 1
-
-```text
-mid=3
-
-arr[mid]=13
+nums[mid]=7
 ```
 
-Found
-
-```text
-res=3
+```
+7<8
 ```
 
 Move Right
 
 ```text
-start=4
+low=3
 ```
 
 ---
 
-### Iteration 2
+Next
 
 ```text
-mid=5
+5 7 7 8 8 10
 
-arr[mid]=20
+      L M H
 ```
 
 ```
-20>13
+mid=4
+
+nums[mid]=8
+```
+
+Possible answer
+
+```text
+lb=4
+```
+
+Search LEFT
+
+```text
+high=3
+```
+
+---
+
+Next
+
+```text
+5 7 7 8 8 10
+
+      L
+      M
+      H
+```
+
+```
+mid=3
+
+nums[mid]=8
+```
+
+Better answer
+
+```text
+lb=3
 ```
 
 Move Left
 
 ```text
-end=4
+high=2
+```
+
+Loop ends
+
+Lower Bound
+
+```text
+3
 ```
 
 ---
 
-### Iteration 3
+# Pointer Placement (Upper Bound)
+
+Need
 
 ```text
-mid=4
-
-arr[mid]=13
+First element >8
 ```
 
-Update
+Initial
 
 ```text
-res=4
+5 7 7 8 8 10
+
+L     M     H
+```
+
+```
+mid=2
+
+7<8
 ```
 
 Move Right
 
+---
+
+Next
+
 ```text
-start=5
+5 7 7 8 8 10
+
+      L M H
 ```
 
-Loop ends.
+```
+mid=4
 
-Return
+8<=8
+```
+
+Still not greater
+
+Move Right
 
 ```text
-4
+low=5
 ```
 
 ---
 
-# Dry Run (Target Not Present)
+Next
+
+```text
+5 7 7 8 8 10
+
+          L
+          M
+          H
+```
+
+```
+mid=5
+
+10>8
+```
+
+Possible answer
+
+```text
+ub=5
+```
+
+Search LEFT
+
+```text
+high=4
+```
+
+Loop ends
+
+Upper Bound
+
+```text
+5
+```
+
+---
+
+# Dry Run
 
 Input
 
 ```text
-arr=[3,4,13,13,13,20,40]
+nums=[5,7,7,8,8,10]
 
-key=60
+target=8
 ```
 
 ---
 
+## Lower Bound
+
+Initial
+
+```text
+low=0
+
+high=5
+
+lb=6
+```
+
+---
+
+Iteration 1
+
+```text
+mid=2
+
+7<8
+```
+
+Move Right
+
+```text
+low=3
+```
+
+---
+
+Iteration 2
+
+```text
+mid=4
+
+8>=8
+```
+
+Store
+
+```text
+lb=4
+```
+
+Move Left
+
+```text
+high=3
+```
+
+---
+
+Iteration 3
+
 ```text
 mid=3
 
-13<60
-
-Move Right
+8>=8
 ```
 
-↓
+Store
+
+```text
+lb=3
+```
+
+Move Left
+
+Stop
+
+---
+
+Lower Bound
+
+```text
+3
+```
+
+---
+
+## Upper Bound
+
+Initial
+
+```text
+low=0
+
+high=5
+
+ub=6
+```
+
+---
+
+Iteration 1
+
+```text
+mid=2
+
+7<=8
+```
+
+Move Right
+
+---
+
+Iteration 2
+
+```text
+mid=4
+
+8<=8
+```
+
+Move Right
+
+---
+
+Iteration 3
 
 ```text
 mid=5
 
-20<60
-
-Move Right
+10>8
 ```
 
-↓
+Store
 
 ```text
-mid=6
-
-40<60
-
-Move Right
+ub=5
 ```
 
-↓
+Move Left
 
-Loop Ends
+Stop
+
+---
+
+Upper Bound
 
 ```text
-res=-1
+5
 ```
 
-Return
+---
+
+Answer
 
 ```text
--1
+First = lb = 3
+
+Last = ub-1 = 4
 ```
+
+```
+[3,4]
+```
+
+---
+
+# Dry Run (Target Missing)
+
+Input
+
+```text
+nums=[5,7,7,8,8,10]
+
+target=6
+```
+
+Lower Bound
+
+```text
+lb=1
+```
+
+Check
+
+```text
+nums[1]=7
+```
+
+```
+7!=6
+```
+
+Therefore
+
+```text
+Target absent
+```
+
+Immediately return
+
+```text
+[-1,-1]
+```
+
+No need to compute Upper Bound.
+
+---
+
+# Why This Check?
+
+```cpp
+if(lb==n || nums[lb]!=target)
+```
+
+Suppose
+
+```text
+nums
+
+5 7 8 9
+
+target=6
+```
+
+Lower Bound returns
+
+```text
+1
+```
+
+because
+
+```text
+7>=6
+```
+
+But
+
+```text
+nums[1]=7
+
+≠6
+```
+
+Meaning
+
+```text
+Target does NOT exist.
+```
+
+Hence
+
+```text
+[-1,-1]
+```
+
+---
+
+# Relationship with Previous Problems
+
+| Problem | Binary Search Variant |
+|----------|----------------------|
+| Lower Bound | First element ≥ target |
+| Upper Bound | First element > target |
+| First Occurrence | Lower Bound |
+| Last Occurrence | Upper Bound-1 |
+| Leetcode 34 | Lower Bound + Upper Bound |
 
 ---
 
 # Binary Search Flow
 
-```text
-Found Target?
-
-      YES
-       │
-Store Current Index
-       │
-Move RIGHT
-       │
-Find Another Target?
-       │
-      YES
-       │
-Update Answer
-       │
-Move RIGHT Again
 ```
+            Target
 
----
+               │
 
-# Difference Between First and Last Occurrence
+       Lower Bound
 
-| First Occurrence | Last Occurrence |
-|------------------|-----------------|
-| Store answer | Store answer |
-| Search LEFT | Search RIGHT |
-| `end = mid - 1` | `start = mid + 1` |
+               │
 
----
+     First Occurrence
 
-# Memory Trick
+               │
 
-```text
-Need FIRST?
+       Upper Bound
 
-← Go LEFT
+               │
 
-Need LAST?
+ Upper Bound - 1
 
-Go RIGHT →
+               │
+
+      Last Occurrence
 ```
 
 ---
 
 # Edge Cases
 
-### Target at Beginning
+## Empty Array
 
 ```text
-[5,5,5,8]
+[]
 
-Answer
+↓
 
-2
+[-1,-1]
 ```
 
 ---
 
-### Single Element
+## One Element
 
 ```text
-[7]
+[8]
 
-Target=7
+↓
 
-Answer=0
+[0,0]
 ```
 
 ---
 
-### Target Missing
+## All Elements Same
 
 ```text
-[2,4,6]
+[2,2,2,2]
 
-Target=5
+↓
 
-Answer=-1
+[0,3]
 ```
 
 ---
 
-### All Elements Same
+## Target Missing
 
 ```text
-[3,3,3,3,3]
+[1,2,3]
 
-Target=3
+target=5
 
-Answer=4
+↓
+
+[-1,-1]
 ```
 
 ---
 
 # Complexity
 
-## Brute Force
+## Time
 
-### Time
+Lower Bound
 
 ```text
-O(N)
+O(logN)
 ```
 
-### Space
+Upper Bound
 
 ```text
-O(1)
+O(logN)
+```
+
+Overall
+
+```text
+O(logN)
 ```
 
 ---
 
-## Optimal
-
-### Time
-
-```text
-O(log N)
-```
-
-Binary Search halves the search space every iteration.
-
----
-
-### Space
+## Space
 
 ```text
 O(1)
@@ -689,31 +934,71 @@ O(1)
 # Revision Template
 
 ```text
-1. Initialize start, end
-2. res = -1
-3. Find mid
-4. If arr[mid] == target
-       res = mid
-       start = mid + 1
-5. Else if target < arr[mid]
-       end = mid - 1
-6. Else
-       start = mid + 1
-7. Return res
+1. Find Lower Bound
+
+↓
+
+First Occurrence
+
+2. If target missing
+
+↓
+
+Return [-1,-1]
+
+3. Find Upper Bound
+
+↓
+
+Last Occurrence = UB-1
+
+4. Return [LB, UB-1]
+```
+
+---
+
+# Memory Trick
+
+```text
+Lower Bound
+
+↓
+
+First ≥ Target
+
+↓
+
+First Occurrence
+
+--------------------------
+
+Upper Bound
+
+↓
+
+First > Target
+
+↓
+
+Previous Index
+
+↓
+
+Last Occurrence
 ```
 
 ---
 
 # Key Takeaways
 
-- The array is sorted, so use Binary Search.
-- Do **not stop** when the target is found.
-- Store the current index.
-- Continue searching on the **right half**.
-- The last stored index is the answer.
+- This problem is a direct application of **Lower Bound** and **Upper Bound**.
+- **Lower Bound** gives the first occurrence.
+- **Upper Bound - 1** gives the last occurrence.
+- Always verify that the lower bound actually contains the target before computing the upper bound.
+- Runs in **O(log N)** with constant extra space.
 
 ---
 
 # Final Intuition
 
-> The moment Binary Search finds the target, it is only a **candidate** for the last occurrence. By saving the index and continuing to search on the **right**, we ensure that no later occurrence is missed.
+> Think of the target values as one continuous block in the sorted array. The **Lower Bound** finds where that block begins, while the **Upper Bound** finds the first position after the block ends. Subtracting one from the Upper Bound gives the last occurrence.
