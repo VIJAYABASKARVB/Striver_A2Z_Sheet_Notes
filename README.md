@@ -45,7 +45,7 @@
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
 | 01 | Pascal's Triangle I | [LeetCode](https://leetcode.com/problems/pascals-triangle/) | [Link](./Arrays/3.Hard/01_Pascals_Triangle_I/pascals_triangle.md) |
-| 02 | Majority Element II | [LeetCode](https://leetcode.com/problems/majority-element-ii/) | ⏳ |
+| 02 | Majority Element II | [LeetCode](https://leetcode.com/problems/majority-element-ii/) | [Link](./Arrays/3.Hard/02_Majority_Element_II/majority_element_2.md) |
 | 03 | 3 Sum | [LeetCode](https://leetcode.com/problems/3sum/) | ⏳ |
 | 04 | 4 Sum | [LeetCode](https://leetcode.com/problems/4sum/) | ⏳ |
 | 05 | Largest Subarray with Sum 0 | [GFG](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1) | ⏳ |
