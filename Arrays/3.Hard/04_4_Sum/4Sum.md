@@ -434,3 +434,383 @@ Because the array is sorted, duplicate handling and pointer movement become effi
 # Final Intuition
 
 > 4 Sum is 3 Sum with one more fixed element: sort the array, fix two numbers, and use two pointers for the remaining two while skipping duplicates carefully.
+
+---
+
+# Pointer Placement Visualization (Optimal Approach)
+
+Let's understand **how the two pointers move**.
+
+### Input
+
+```text
+arr = [1,0,-1,0,-2,2]
+target = 0
+```
+
+### Step 1 : Sort the array
+
+```text
+Index : 0   1   2   3   4   5
+Value :-2  -1   0   0   1   2
+```
+
+---
+
+## Iteration 1
+
+Choose
+
+```text
+i = 0
+j = 1
+```
+
+So
+
+```text
+arr[i] = -2
+arr[j] = -1
+```
+
+Now place the two pointers.
+
+```text
+          i   j   L           R
+          ↓   ↓   ↓           ↓
+
+Index :   0   1   2   3   4   5
+Value :  -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-2 + (-1) + 0 + 2 = -1
+```
+
+Since
+
+```text
+-1 < target(0)
+```
+
+we need a **bigger sum**.
+
+Move **left**.
+
+---
+
+```text
+          i   j       L       R
+          ↓   ↓       ↓       ↓
+
+Index :   0   1   2   3   4   5
+Value :  -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-2 + (-1) + 0 + 2 = -1
+```
+
+Still too small.
+
+Move left again.
+
+---
+
+```text
+          i   j           L   R
+          ↓   ↓           ↓   ↓
+
+Index :   0   1   2   3   4   5
+Value :  -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-2 + (-1) + 1 + 2 = 0
+```
+
+Perfect!
+
+Store
+
+```text
+[-2,-1,1,2]
+```
+
+Now move both pointers.
+
+```text
+left++
+right--
+```
+
+Pointers cross.
+
+This `(i,j)` pair is finished.
+
+---
+
+# Iteration 2
+
+Keep
+
+```text
+i = 0
+```
+
+Move
+
+```text
+j = 2
+```
+
+Pointers become
+
+```text
+              i       j   L       R
+              ↓       ↓   ↓       ↓
+
+Index :       0   1   2   3   4   5
+Value :      -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-2 + 0 + 0 + 2 = 0
+```
+
+Found
+
+```text
+[-2,0,0,2]
+```
+
+Move both pointers.
+
+```text
+left++
+right--
+```
+
+Pointers meet.
+
+Done.
+
+---
+
+# Iteration 3
+
+Now
+
+```text
+i = 1
+j = 2
+```
+
+Pointers
+
+```text
+                  i   j   L       R
+                  ↓   ↓   ↓       ↓
+
+Index :           0   1   2   3   4   5
+Value :          -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-1 + 0 + 0 + 2 = 1
+```
+
+Too large.
+
+Need a **smaller** sum.
+
+Move
+
+```text
+right--
+```
+
+---
+
+```text
+                  i   j   L   R
+                  ↓   ↓   ↓   ↓
+
+Index :           0   1   2   3   4   5
+Value :          -2  -1   0   0   1   2
+```
+
+Current Sum
+
+```text
+-1 + 0 + 0 + 1 = 0
+```
+
+Found
+
+```text
+[-1,0,0,1]
+```
+
+Done.
+
+---
+
+# Why Move Left?
+
+When
+
+```text
+sum < target
+```
+
+the sum is too small.
+
+Since the array is sorted,
+
+```text
+moving left →
+```
+
+means
+
+```text
+0 → 1 → 2 → 3 ...
+```
+
+The sum increases.
+
+---
+
+# Why Move Right?
+
+When
+
+```text
+sum > target
+```
+
+the sum is too large.
+
+Moving
+
+```text
+right ←
+```
+
+means
+
+```text
+5 → 4 → 3 → 2 ...
+```
+
+The value decreases.
+
+So the sum becomes smaller.
+
+---
+
+# Pointer Movement Summary
+
+```text
+sum < target
+      │
+      ▼
+Move Left →
+
+-----------------------
+
+sum > target
+      │
+      ▼
+Move Right ←
+
+-----------------------
+
+sum == target
+      │
+      ▼
+Store Quadruplet
+
+Move Left →
+Move Right ←
+
+Skip duplicates
+```
+
+---
+
+# Complete Pointer Flow
+
+```text
+Sorted Array
+
+-2   -1    0    0    1    2
+ ↑     ↑    ↑              ↑
+ i     j    L              R
+
+↓
+
+Sum < target
+
+Move L →
+
+-2   -1    0    0    1    2
+ ↑     ↑         ↑         ↑
+ i     j         L         R
+
+↓
+
+Sum < target
+
+Move L →
+
+-2   -1    0    0    1    2
+ ↑     ↑              ↑    ↑
+ i     j              L    R
+
+↓
+
+Sum == target
+
+Store
+
+[-2,-1,1,2]
+
+↓
+
+Move both pointers
+
+L++
+R--
+
+Done for this (i,j)
+```
+
+### ⭐ Memory Trick
+
+Think of it exactly like **3 Sum**.
+
+```
+4 Sum
+
+Fix i
+      ↓
+Fix j
+      ↓
+Remaining problem becomes
+
+2 Sum using Two Pointers
+```
+
+That's why the optimal complexity is **O(n³)** instead of **O(n⁴)**.
