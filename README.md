@@ -81,9 +81,9 @@
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
-| 01 | Find Square Root of a Number | [LeetCode](https://leetcode.com/problems/sqrtx/) | ⏳ |
+| 01 | Find Square Root of a Number | [LeetCode](https://leetcode.com/problems/sqrtx/) | [Link](./Binary%20Search/2.BS%20on%20Answers/01_Find_Square_Root_of_a_Number/Find_Square_Root_of_a_Number.md) |
 | 02 | Find Nth Root of a Number | [GFG](https://www.geeksforgeeks.org/problems/find-nth-root-of-m/1) | ⏳ |
-| 03 | Koko Eating Bananas | [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | ⏳ |
+| 03 | Koko Eating Bananas | [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | [Link](./Binary%20Search/2.BS%20on%20Answers/03_Koko_Eating_Bananas/Koko_Eating_Bananas.md) |
 | 04 | Minimum Days to Make M Bouquets | [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | ⏳ |
 | 05 | Find the Smallest Divisor | [LeetCode](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | ⏳ |
 | 06 | Capacity to Ship Packages Within D Days | [LeetCode](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | ⏳ |
