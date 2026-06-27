@@ -73,7 +73,7 @@
 | 08 | Search in Rotated Sorted Array I | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/08_Search_in_Rotated_Sorted_Array_I/Search_in_Rotated_Sorted_Array_I.md) |
 | 09 | Search in Rotated Sorted Array II | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/09_Search_in_Rotated_Sorted_Array_II/Search_in_Rotated_Sorted_Array_II.md) |
 | 10 | Find Minimum in Rotated Sorted Array | [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/10_Find_Minimum_in_Rotated_Sorted_Array/Find_Minimum_in_Rotated_Sorted_Array.md) |
-| 11 | Find How Many Times Array is Rotated | [GFG](https://www.geeksforgeeks.org/problems/rotation/1) | ⏳ |
+| 11 | Find How Many Times Array is Rotated | [GFG](https://www.geeksforgeeks.org/problems/rotation/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/11_Find_Out_How_Many_Times_the_Array_is_Rotated/Find_Out_How_Many_Times_the_Array_is_Rotated.md) |
 | 12 | Single Element in a Sorted Array | [LeetCode](https://leetcode.com/problems/single-element-in-a-sorted-array/) | ⏳ |
 | 13 | Find Peak Element | [LeetCode](https://leetcode.com/problems/find-peak-element/) | ⏳ |
 
