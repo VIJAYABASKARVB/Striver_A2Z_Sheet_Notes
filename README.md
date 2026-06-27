@@ -50,7 +50,7 @@
 | 04 | 4 Sum | [LeetCode](https://leetcode.com/problems/4sum/) | [Link](./Arrays/3.Hard/04_4_Sum/4Sum.md) |
 | 05 | Largest Subarray with Sum 0 | [GFG](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1) | [Link](./Arrays/3.Hard/05_Largest_Subarray_with_Sum_0/largest_subarray_with_sum_0.md) |
 | 06 | Count Subarrays with XOR K | [GFG](https://www.geeksforgeeks.org/problems/subarrays-with-xor-k/1) | ⏳ |
-| 07 | Merge Overlapping Intervals | [LeetCode](https://leetcode.com/problems/merge-intervals/) | ⏳ |
+| 07 | Merge Overlapping Intervals | [LeetCode](https://leetcode.com/problems/merge-intervals/) | [Link](./Arrays/3.Hard/07_Merge_Overlapping_Subintervals/Merge_overlapping_subintervals.md) |
 | 08 | Merge Sorted Arrays Without Extra Space | [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | ⏳ |
 | 09 | Find Repeating & Missing Number | [LeetCode](https://leetcode.com/problems/set-mismatch/) | ⏳ |
 | 10 | Count Inversions | [GFG](https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1) | ⏳ |
