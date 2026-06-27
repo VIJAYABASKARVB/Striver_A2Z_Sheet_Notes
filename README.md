@@ -57,6 +57,55 @@
 | 11 | Reverse Pairs | [LeetCode](https://leetcode.com/problems/reverse-pairs/) | ⏳ |
 | 12 | Maximum Product Subarray | [LeetCode](https://leetcode.com/problems/maximum-product-subarray/) | ⏳ |
 
+## Binary Search
+
+### 🔵 BS on 1D Arrays
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Search X in Sorted Array | [LeetCode](https://leetcode.com/problems/binary-search/) | ⏳ |
+| 02 | Lower Bound | [GFG](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array/1) | ⏳ |
+| 03 | Upper Bound | [GFG](https://www.geeksforgeeks.org/problems/ceil-the-floor/1) | ⏳ |
+| 04 | Search Insert Position | [LeetCode](https://leetcode.com/problems/search-insert-position/) | ⏳ |
+| 05 | Floor and Ceil in Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array/1) | ⏳ |
+| 06 | First and Last Occurrence | [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | ⏳ |
+| 07 | Count Occurrences in a Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/number-of-occurrence/1) | ⏳ |
+| 08 | Search in Rotated Sorted Array I | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array/) | ⏳ |
+| 09 | Search in Rotated Sorted Array II | [LeetCode](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | ⏳ |
+| 10 | Find Minimum in Rotated Sorted Array | [LeetCode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | ⏳ |
+| 11 | Find How Many Times Array is Rotated | [GFG](https://www.geeksforgeeks.org/problems/rotation/1) | ⏳ |
+| 12 | Single Element in a Sorted Array | [LeetCode](https://leetcode.com/problems/single-element-in-a-sorted-array/) | ⏳ |
+| 13 | Find Peak Element | [LeetCode](https://leetcode.com/problems/find-peak-element/) | ⏳ |
+
+### 🟢 BS on Answers
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Find Square Root of a Number | [LeetCode](https://leetcode.com/problems/sqrtx/) | ⏳ |
+| 02 | Find Nth Root of a Number | [GFG](https://www.geeksforgeeks.org/problems/find-nth-root-of-m/1) | ⏳ |
+| 03 | Koko Eating Bananas | [LeetCode](https://leetcode.com/problems/koko-eating-bananas/) | ⏳ |
+| 04 | Minimum Days to Make M Bouquets | [LeetCode](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | ⏳ |
+| 05 | Find the Smallest Divisor | [LeetCode](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | ⏳ |
+| 06 | Capacity to Ship Packages Within D Days | [LeetCode](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | ⏳ |
+| 07 | Kth Missing Positive Number | [LeetCode](https://leetcode.com/problems/kth-missing-positive-number/) | ⏳ |
+| 08 | Aggressive Cows | [GFG](https://www.geeksforgeeks.org/problems/aggressive-cows/1) | ⏳ |
+| 09 | Book Allocation Problem | [GFG](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages/1) | ⏳ |
+| 10 | Split Array Largest Sum | [LeetCode](https://leetcode.com/problems/split-array-largest-sum/) | ⏳ |
+| 11 | Painters Partition | [GFG](https://www.geeksforgeeks.org/problems/the-painters-partition-problem/1) | ⏳ |
+| 12 | Minimize Max Distance to Gas Station | [GFG](https://www.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1) | ⏳ |
+| 13 | Median of 2 Sorted Arrays | [LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/) | ⏳ |
+| 14 | Kth Element of 2 Sorted Arrays | [GFG](https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array/1) | ⏳ |
+
+### 🟣 BS on 2D Arrays
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Find Row with Maximum 1s | [GFG](https://www.geeksforgeeks.org/problems/row-with-max-1s/1) | ⏳ |
+| 02 | Search in a 2D Matrix | [LeetCode](https://leetcode.com/problems/search-a-2d-matrix/) | ⏳ |
+| 03 | Search in 2D Matrix II | [LeetCode](https://leetcode.com/problems/search-a-2d-matrix-ii/) | ⏳ |
+| 04 | Find Peak Element II | [LeetCode](https://leetcode.com/problems/find-a-peak-element-ii/) | ⏳ |
+| 05 | Matrix Median | [GFG](https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix/1) | ⏳ |
+
 ## Stack-Queue
 
 ### 💡 Learning
@@ -67,26 +116,26 @@
 | 02 | Queue Using Array (Circular) | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-array/1) | [Link](./Stack-Queue/Learning/02_Implement_Queue_Using_Arrays/Implement_Queue_Using_Arrays.md) |
 | 03 | Implement Stack using Single Queue | [LeetCode](https://leetcode.com/problems/implement-stack-using-queues/) | [Link](./Stack-Queue/Learning/03_Implement_Stack_Using_Queue/Implement_Stack_Using_Queue.md) |
 | 04 | Implement Queue using Stack | [LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/) | [Link](./Stack-Queue/Learning/04_Implement_Queue_Using_Stack/Implement_Queue_Using_Stack.md) |
-| 05 | Implement Stack using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1) | [Link](./Stack-Queue/Learning/05_Implement_Stack_Using_LinkedList/Implement_Stack_Using_LinkedList.md) |
-| 06 | Implement Queue using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1) | [Link](./Stack-Queue/Learning/06_Implement_Queue_Using_LinkedList/Implement_Queue_Using_LinkedList.md) |
+| 05 | Implement Stack using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1) | ⏳ |
+| 06 | Implement Queue using LinkedList | [GFG](https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1) | ⏳ |
 | 07 | Check for Balanced Parentheses | [LeetCode](https://leetcode.com/problems/valid-parentheses/) | [Link](./Stack-Queue/Learning/07_Balanced_Parenthesis/Balanced_Parenthesis.md) |
-| 08 | Implement Min Stack | [LeetCode](https://leetcode.com/problems/min-stack/) | [Link](./Stack-Queue/Learning/08_Implement_Min_Stack/Implement_Min_Stack.md) |
+| 08 | Implement Min Stack | [LeetCode](https://leetcode.com/problems/min-stack/) | ⏳ |
 
 ### 📊 Mono-stack
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
 | 01 | Next Greater Element I | [LeetCode](https://leetcode.com/problems/next-greater-element-i/) | [Link](./Stack-Queue/Mono-stack/01_Next_Greater_Element/Next_Greater_Element.md) |
-| 02 | Next Greater Element II | [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | [Link](./Stack-Queue/Mono-stack/02_Next_Greater_Element_II/Next_Greater_Element_II.md) |
-| 03 | Next Smaller Element | [GFG](https://www.geeksforgeeks.org/problems/next-smaller-element/1) | [Link](./Stack-Queue/Mono-stack/03_Next_Smaller_Element/Next_Smaller_Element.md) |
-| 04 | Number of Greater Elements to the Right | [GFG](https://www.geeksforgeeks.org/problems/count-of-greater-elements-to-the-right/1) | [Link](./Stack-Queue/Mono-stack/04_Number_of_Greater_Elements_to_the_Right/Number_of_Greater_Elements_to_the_Right.md) |
-| 05 | Trapping Rainwater | [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | [Link](./Stack-Queue/Mono-stack/05_Trapping_Rainwater/Trapping_Rainwater.md) |
-| 06 | Sum of Subarray Minimums | [LeetCode](https://leetcode.com/problems/sum-of-subarray-minimums/) | [Link](./Stack-Queue/Mono-stack/06_Sum_of_Subarray_Minimums/Sum_of_Subarray_Minimums.md) |
-| 07 | Asteroid Collision | [LeetCode](https://leetcode.com/problems/asteroid-collision/) | [Link](./Stack-Queue/Mono-stack/07_Asteroid_Collision/Asteroid_Collision.md) |
-| 08 | Sum of Subarray Ranges | [LeetCode](https://leetcode.com/problems/sum-of-subarray-ranges/) | [Link](./Stack-Queue/Mono-stack/08_Sum_of_Subarray_Ranges/Sum_of_Subarray_Ranges.md) |
-| 09 | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | [Link](./Stack-Queue/Mono-stack/09_Remove_K_Digits/Remove_K_Digits.md) |
-| 10 | Largest Rectangle in Histogram | [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Link](./Stack-Queue/Mono-stack/10_Largest_Rectangle_in_a_Histogram/Largest_Rectangle_in_a_Histogram.md) |
-| 11 | Maximal Rectangle | [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | [Link](./Stack-Queue/Mono-stack/11_Maximal_Rectangle/Maximal_Rectangle.md) |
+| 02 | Next Greater Element II | [LeetCode](https://leetcode.com/problems/next-greater-element-ii/) | ⏳ |
+| 03 | Next Smaller Element | [GFG](https://www.geeksforgeeks.org/problems/next-smaller-element/1) | ⏳ |
+| 04 | Number of Greater Elements to the Right | [GFG](https://www.geeksforgeeks.org/problems/count-of-greater-elements-to-the-right/1) | ⏳ |
+| 05 | Trapping Rainwater | [LeetCode](https://leetcode.com/problems/trapping-rain-water/) | ⏳ |
+| 06 | Sum of Subarray Minimums | [LeetCode](https://leetcode.com/problems/sum-of-subarray-minimums/) | ⏳ |
+| 07 | Asteroid Collision | [LeetCode](https://leetcode.com/problems/asteroid-collision/) | ⏳ |
+| 08 | Sum of Subarray Ranges | [LeetCode](https://leetcode.com/problems/sum-of-subarray-ranges/) | ⏳ |
+| 09 | Remove K Digits | [LeetCode](https://leetcode.com/problems/remove-k-digits/) | ⏳ |
+| 10 | Largest Rectangle in Histogram | [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/) | ⏳ |
+| 11 | Maximal Rectangle | [LeetCode](https://leetcode.com/problems/maximal-rectangle/) | ⏳ |
 
 ## Sliding Window & Two Pointer Combined Problems
 
