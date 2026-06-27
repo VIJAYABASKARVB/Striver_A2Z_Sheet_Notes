@@ -65,7 +65,7 @@
 |---|---------|-------|----------|
 | 01 | Search X in Sorted Array | [LeetCode](https://leetcode.com/problems/binary-search/) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/01_Search_X_in_Sorted_Array/Search_X_in_Sorted_Array.md) |
 | 02 | Lower Bound | [GFG](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/02_Lower_Bound/Lower_Bound.md) |
-| 03 | Upper Bound | [GFG](https://www.geeksforgeeks.org/problems/ceil-the-floor/1) | ⏳ |
+| 03 | Upper Bound | [GFG](https://www.geeksforgeeks.org/problems/ceil-the-floor/1) | [Link](./Binary%20Search/1.BS%20on%201D%20Arrays/03_Upper_Bound/Upper_Bound.md) |
 | 04 | Search Insert Position | [LeetCode](https://leetcode.com/problems/search-insert-position/) | ⏳ |
 | 05 | Floor and Ceil in Sorted Array | [GFG](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array/1) | ⏳ |
 | 06 | First and Last Occurrence | [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | ⏳ |
