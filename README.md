@@ -106,6 +106,15 @@
 | 04 | Find Peak Element II | [LeetCode](https://leetcode.com/problems/find-a-peak-element-ii/) | ⏳ |
 | 05 | Matrix Median | [GFG](https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix/1) | ⏳ |
 
+## String
+
+### 🟠 Medium Problems
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Reverse Words in a String | [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string/) | [Link](./String/Reverse%20Words%20in%20a%20String/reverse_words_in_a_string.md) |
+| 02 | Sort Characters By Frequency | [LeetCode](https://leetcode.com/problems/sort-characters-by-frequency/) | ⏳ |
+
 ## Stack-Queue
 
 ### 💡 Learning
