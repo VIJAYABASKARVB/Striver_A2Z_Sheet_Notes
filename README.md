@@ -117,11 +117,11 @@
 
 ## Trees
 
-### 🌱 Traversals
+### Easy
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
-| 01 | Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Link](./Trees/01_pre-Order-Traversal/preorder-traversal.md) |
+| 01 | Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Link](./Trees/Easy/01_pre-Order-Traversal/preorder-traversal.md) |
 | 02 | Inorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | ⏳ |
 | 03 | Postorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | ⏳ |
 | 04 | Level Order Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | ⏳ |
@@ -130,6 +130,23 @@
 | 07 | Postorder Using 2 Stacks | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | ⏳ |
 | 08 | Postorder Using 1 Stack | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | ⏳ |
 | 09 | Preorder + Inorder + Postorder in One Traversal | [GFG](https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/) | ⏳ |
+
+### Medium
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Maximum Depth in Binary Tree | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ⏳ |
+| 02 | Balanced Binary Tree | [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | ⏳ |
+| 03 | Diameter of Binary Tree | [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | ⏳ |
+| 04 | Maximum Path Sum | [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | ⏳ |
+| 05 | Check if Two Trees are Identical | [LeetCode](https://leetcode.com/problems/same-tree/) | ⏳ |
+| 06 | Zig Zag / Spiral Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | ⏳ |
+| 07 | Boundary Traversal | [GFG](https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/) | ⏳ |
+| 08 | Vertical Order Traversal | [LeetCode](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | ⏳ |
+| 09 | Top View of Binary Tree | [GFG](https://www.geeksforgeeks.org/print-top-view-of-binary-tree/) | ⏳ |
+| 10 | Bottom View of Binary Tree | [GFG](https://www.geeksforgeeks.org/bottom-view-of-binary-tree/) | ⏳ |
+| 11 | Right / Left View of Binary Tree | [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view/) | ⏳ |
+| 12 | Symmetric Binary Tree | [LeetCode](https://leetcode.com/problems/symmetric-tree/) | ⏳ |
 
 ## Stack-Queue
 
