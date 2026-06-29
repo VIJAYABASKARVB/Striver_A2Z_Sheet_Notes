@@ -115,6 +115,14 @@
 | 01 | Reverse Words in a String | [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string/) | [Link](./String/Reverse%20Words%20in%20a%20String/reverse_words_in_a_string.md) |
 | 02 | Sort Characters By Frequency | [LeetCode](https://leetcode.com/problems/sort-characters-by-frequency/) | ⏳ |
 
+## Trees
+
+### 🌱 Traversals
+
+| # | Problem | Links | Solution |
+|---|---------|-------|----------|
+| 01 | Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Link](./Trees/Pre-Order-Traversal/preorder-traversal.md) |
+
 ## Stack-Queue
 
 ### 💡 Learning
