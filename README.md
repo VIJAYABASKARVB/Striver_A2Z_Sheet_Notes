@@ -124,7 +124,7 @@
 | 01 | Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Link](./Trees/Easy/01_pre-Order-Traversal/preorder-traversal.md) |
 | 02 | Inorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Link](./Trees/Easy/02_Inorder_Traversal_of_Binary_Tree/Inorder_Traversal_of_Binary_Tree.md) |
 | 03 | Postorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Link](./Trees/Easy/03_Postorder_Traversal/Postorder_Traversal.md) |
-| 04 | Level Order Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | ⏳ |
+| 04 | Level Order Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Link](./Trees/Easy/04_Level_Order_Traversal/Level_Order_Traversal.md) |
 | 05 | Iterative Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | ⏳ |
 | 06 | Iterative Inorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | ⏳ |
 | 07 | Postorder Using 2 Stacks | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | ⏳ |
