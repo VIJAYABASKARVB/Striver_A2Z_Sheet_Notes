@@ -128,15 +128,15 @@
 | 05 | Iterative Preorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Link](./Trees/Easy/05_Iterative_Preorder_Traversal_of_Binary_Tree/Iterative_Preorder_Traversal_of_Binary_Tree.md) |
 | 06 | Iterative Inorder Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Link](./Trees/Easy/06_Iterative_Inorder_Traversal_of_Binary_Tree/Iterative_Inorder_Traversal_of_Binary_Tree.md) |
 | 07 | Postorder Using 2 Stacks | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Link](./Trees/Easy/07_Postorder_Traversal_of_Binary_Tree_Using_2_Stacks/Postorder_Traversal_of_Binary_Tree_Using_2_Stacks.md) |
-| 08 | Postorder Using 1 Stack | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | ⏳ |
+| 08 | Postorder Using 1 Stack | [LeetCode](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Link](./Trees/Easy/08_Postorder_Traversal_of_Binary_Tree_Using_1_Stack/Postorder_Traversal_of_Binary_Tree_Using_1_Stack.md) |
 | 09 | Preorder + Inorder + Postorder in One Traversal | [GFG](https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/) | ⏳ |
 
 ### Medium
 
 | # | Problem | Links | Solution |
 |---|---------|-------|----------|
-| 01 | Maximum Depth in Binary Tree | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ⏳ |
-| 02 | Balanced Binary Tree | [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | ⏳ |
+| 01 | Maximum Depth in Binary Tree | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Link](./Trees/Medium/01_Maximum_Depth_in_Binary_Tree/Maximum_Depth_in_Binary_Tree.md) |
+| 02 | Balanced Binary Tree | [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [Link](./Trees/Medium/02_Check_for_Balanced_Binary_Tree/Check_for_Balanced_Binary_Tree.md) |
 | 03 | Diameter of Binary Tree | [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | ⏳ |
 | 04 | Maximum Path Sum | [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | ⏳ |
 | 05 | Check if Two Trees are Identical | [LeetCode](https://leetcode.com/problems/same-tree/) | ⏳ |
