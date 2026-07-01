@@ -137,7 +137,7 @@
 |---|---------|-------|----------|
 | 01 | Maximum Depth in Binary Tree | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Link](./Trees/Medium/01_Maximum_Depth_in_Binary_Tree/Maximum_Depth_in_Binary_Tree.md) |
 | 02 | Balanced Binary Tree | [LeetCode](https://leetcode.com/problems/balanced-binary-tree/) | [Link](./Trees/Medium/02_Check_for_Balanced_Binary_Tree/Check_for_Balanced_Binary_Tree.md) |
-| 03 | Diameter of Binary Tree | [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | ⏳ |
+| 03 | Diameter of Binary Tree | [LeetCode](https://leetcode.com/problems/diameter-of-binary-tree/) | [Link](./Trees/Medium/03_Diameter_of_Binary_Tree/Diameter_of_Binary_Tree.md) |
 | 04 | Maximum Path Sum | [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | ⏳ |
 | 05 | Check if Two Trees are Identical | [LeetCode](https://leetcode.com/problems/same-tree/) | ⏳ |
 | 06 | Zig Zag / Spiral Traversal | [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | ⏳ |
